@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="controls">
+      <label for="example-select">Choose Canvas Example:</label>
+      <select id="example-select">
+        <option value="geometric">Geometric Patterns</option>
+        <option value="drawing">Interactive Drawing</option>
+        <option value="charts">Data Visualization</option>
+      </select>
+    </div>
     <div class="container">
       <div class="left-panel">
         <h3>Canvas Result</h3>
@@ -17,16 +25,8 @@
       <div class="right-panel">
         <h3>Code Editor</h3>
         <div class="editor">
-          <div class="line-numbers">
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-          </div>
-          <pre class="code">
-<span class="keyword">const</span> message = <span class="string">'Hello, world!'</span>;
-<span class="function">console.log</span>(message);
-      </pre>
+          <div class="line-numbers" id="line-numbers"></div>
+          <pre class="code" id="code-display"></pre>
         </div>
       </div>
     </div>
