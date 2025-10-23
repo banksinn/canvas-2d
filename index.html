@@ -7,7 +7,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <canvas id="canvas"></canvas>
+    <div class="container">
+      <div class="left-panel">
+        <h3>Canvas Result</h3>
+        <div class="canvas-container">
+          <canvas id="canvas"></canvas>
+        </div>
+      </div>
+      <div class="right-panel">
+        <h3>Code Editor</h3>
+        <div class="editor">
+          <div class="line-numbers">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+          </div>
+          <pre class="code">
+<span class="keyword">const</span> message = <span class="string">'Hello, world!'</span>;
+<span class="function">console.log</span>(message);
+      </pre>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
