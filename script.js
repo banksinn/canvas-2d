@@ -215,7 +215,7 @@ const codeExamples = {
 
   <span class="comment">// Start the clock animation</span>
   <span class="function">drawClock</span>();
-  animationFrame = <span class="function">requestAnimationFrame</span>(clock);
+  <span class="function">requestAnimationFrame</span>(clock);
 }
 <span class="function">clock</span>();`,
 };
